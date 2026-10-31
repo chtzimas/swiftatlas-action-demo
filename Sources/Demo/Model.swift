@@ -7,7 +7,7 @@ class ViewController {
 }
 
 class CacheManager {
-    var store: CacheStore?
+    weak var store: CacheStore?
 }
 
 class CacheStore {
