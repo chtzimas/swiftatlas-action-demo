@@ -1,0 +1,22 @@
+name: Architecture Check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  retain-cycle-check:
+    name: SwiftAtlas Retain Cycle Check
+    runs-on: macos-15
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: SwiftAtlas
+        uses: chtzimas/SwiftAtlas@v0.3/feature/github-actions-cycle-check
+        with:
+          path: '.'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
