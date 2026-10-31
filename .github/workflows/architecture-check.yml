@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: SwiftAtlas
-        uses: chtzimas/SwiftAtlas@v0.3/feature/github-actions-cycle-check
+        uses: chtzimas/SwiftAtlas@v0.3/feature/diff-new-cycles
         with:
           path: '.'
           github-token: ${{ secrets.GITHUB_TOKEN }}
