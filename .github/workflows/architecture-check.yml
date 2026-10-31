@@ -1,4 +1,4 @@
-name: Architecture Check
+name: Retain Cycle Detection
 
 on:
   pull_request:
