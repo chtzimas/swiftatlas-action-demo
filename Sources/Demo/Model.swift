@@ -1,5 +1,5 @@
 class ViewModel {
-    var delegate: ViewController?
+    weak var delegate: ViewController?
 }
 
 class ViewController {
